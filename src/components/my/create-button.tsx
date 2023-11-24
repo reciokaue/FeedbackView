@@ -33,7 +33,7 @@ export function NewFormButton(){
             <Label html-for="name">Nome</Label>
             <Input type="text" id="name" placeholder="Nome" />
             <Label>Tópico</Label>
-            <Combobox defaultTitle="Selecione um tópico" frameworks={data.topics}/>
+            <Combobox title="Selecione um tópico" frameworks={data.topics}/>
             <article className="flex justify-center items-center gap-4">
               {options.map(({title, Icon}, index) => (
                 <Button key={index} variant="outline" className="flex flex-col gap-2 w-full h-32">
