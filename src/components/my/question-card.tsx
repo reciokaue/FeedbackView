@@ -37,7 +37,7 @@ export function QuestionCard({ data, index, editing = false }: CardData){
   return (
     <Card className={cn(
       "group flex flex-col relative px-6 py-8 max-w-xl w-full",
-      editing && "border-blue-500 border-2"
+      editing && "border-primary border-2"
     )}>
       <header className="flex justify-between items-center mb-4">
         <label className="flex gap-2 self-end text-muted-foreground text-sm items-center">
@@ -48,48 +48,48 @@ export function QuestionCard({ data, index, editing = false }: CardData){
         </label>
       </header>
       <div className="flex flex-1 gap-4">
-        <span className="rounded-full flex justify-center items-center shrink-0 h-7 w-7 pt-0.5 bg-blue-500 text-white">{index+1}</span>            
+        <span className="rounded-full flex justify-center items-center shrink-0 h-7 w-7 bg-primary text-white">{index+1}</span>            
         <p className="text-lg font-medium w-full text-neutral-700 leading-relaxed">{data.text}</p>
       </div>
 
       {editing &&
         <form className="flex flex-col mt-8 gap-4">  
           <LabelDiv
-            title="Question"
+            title="Questão"
             child={<Input value={data.text}  id="question"/>}
             labelFor="question"
           />
           <div className="flex gap-4 items-center justify-between">
             <LabelDiv
-              title="Topic"
+              title="Tópico"
               tooltip="O Tópico é relacionado a pergunta e é utilizado para mostrar e filtrar melhor o resultado das perguntas do formulário"
               child={<Combobox defaultValue="3" title="Selecione um tópico..." frameworks={defaultData.topics}/>}
             />
             <LabelDiv
-              title="Question type"
+              title="Tipo de questão"
               tooltip="O tipo da pergunta é muito importante para se ter o resultado desejado da melhor maneira possível"
               child={<Combobox defaultValue="multiple_choice" title="Selecione um tipo..." frameworks={defaultData.questionTypes}/>}
             />
           </div>
           <LabelDiv
-            title="Format preview"
+            title="Preview"
             tooltip="Este é o formato das questões que o usuário vai responder"
             styles="bg-gray-50 rounded-lg p-6 flex gap-3 justify-center items-center flex-wrap"
           >
-            {["Yes", "No", "Maybe"].map((option) => (
+            {["Sim", "Não", "Talvez"].map((option) => (
               <Button key={option} variant="outline" className="bg- flex-wrap">
                 {option}
               </Button>
             ))}
           </LabelDiv>
-          <LabelDiv title="Choices" styles="space-y-3 pr-8">
-            {["Yes", "No", "Maybe"].map((option) => (
+          <LabelDiv title="Escolhas" styles="space-y-3 pr-8">
+            {["Sim", "Não", "Talvez"].map((option) => (
               <li key={option} className="flex items-center gap-2 text-muted-foreground">
-                <GripVertical size={18}/>
-                <Input value={option} placeholder="Option text" styles="flex-1"/>
                 <Button variant="link" className="hover:text-red-500">
                   <Trash2/>
                 </Button>
+                <Input value={option} placeholder="Option text" styles="flex-1"/>
+                <GripVertical size={18}/>
               </li>
             ))}
           </LabelDiv>
@@ -99,11 +99,11 @@ export function QuestionCard({ data, index, editing = false }: CardData){
             required questions: booleans
             allow comments: booleans
           </LabelDiv> */}
-          <div className="flex gap-2 mt-3">
-            <Button className="bg-blue-500 gap-2">
+          <div className="flex justify-end gap-2 mt-3">
+            <Button variant="secondary">Cancel</Button>
+            <Button className="bg-primary gap-2">
               Save question <Check size={20}/>
             </Button>
-            <Button variant="secondary">Cancel</Button>
           </div>
         </form>
       }

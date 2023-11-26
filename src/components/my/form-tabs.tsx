@@ -1,14 +1,18 @@
-import { HelpCircle, History, Wrench } from "lucide-react";
+import { ChevronLeft, HelpCircle, History, Wrench } from "lucide-react";
 import { Button } from "../ui/button";
 
 export function FormTabs(){
   return (
-    <article className="flex flex-col absolute gap-1 h-screen justify-start ">
+    <article className="flex w-fit flex-col sticky top-12 gap-1 justify-start ">
+      <Button className="gap-2 justify-start  text-muted-foreground pl-3 pr-10 " variant="ghost">
+        <ChevronLeft size={20}/>
+        Back to Dashboard
+      </Button>
       <Button className="gap-2 justify-start  text-muted-foreground pl-3 pr-10 " variant="ghost">
         <Wrench size={20}/>
         1. Camping setup
       </Button>
-      <Button className="gap-2 justify-start bg-blue-100 text-blue-600 pt-2 pl-3 pr-10 items-center"  variant="secondary">
+      <Button className="gap-2 justify-start pt-2 pl-3 pr-10 items-center"  variant="secondary">
         <HelpCircle size={20}/>
         2. Question list
       </Button>

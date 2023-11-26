@@ -7,6 +7,7 @@ import { Textarea } from "../ui/textarea";
 import { Combobox } from "../ui/combobox";
 import Link from "next/link";
 import { data } from "@/lib/dataExample";
+import { ToggleGroup, ToggleGroupItem } from "../ui/toggle-group";
 
 const options = [
   {title: "Começar do zero", Icon: Hand},
@@ -34,14 +35,16 @@ export function NewFormButton(){
             <Input type="text" id="name" placeholder="Nome" />
             <Label>Tópico</Label>
             <Combobox title="Selecione um tópico" frameworks={data.topics}/>
-            <article className="flex justify-center items-center gap-4">
+            {/* <article className="flex justify-center items-center gap-4"> */}
+            <ToggleGroup type="single">
               {options.map(({title, Icon}, index) => (
-                <Button key={index} variant="outline" className="flex flex-col gap-2 w-full h-32">
+                <ToggleGroupItem value={title} key={index} variant="outline" className="flex flex-col gap-2 w-full h-32">
                   <Icon className="w-6 h-6" color="#222"/>
                   <h1>{title}</h1>
-                </Button>
+                </ToggleGroupItem>
               ))}
-            </article>
+            </ToggleGroup>
+            {/* </article> */}
             <Label html-for="about">Sobre</Label>
             <Textarea className="h-20 resize-none" id="about" placeholder="Fale sobre o foco do formulário..." />
             <AlertDialogDescription className="pb-10">
