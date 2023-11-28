@@ -6,10 +6,10 @@ import { ThemeToggle } from "./theme-toggle";
 import Link from "next/link";
 
 const links = [
-  {title: "Home", path: "/dashboard", variant: "outline"},
-  {title: "info", path: "/info", variant: "link"},
-  {title: "home", path: "/dashboard", variant: "link"},
-  {title: "home", path: "/dashboard", variant: "link"},
+  {title: "Home", path: "/home", variant: "outline"},
+  {title: "Sobre", path: "/info", variant: "link"},
+  {title: "Planos", path: "/plans", variant: "link"},
+  {title: "Upgrade", path: "/plans", variant: "gold"},
 ]
 
 export function Navbar(){
