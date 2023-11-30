@@ -1,13 +1,15 @@
 import { Navbar } from "@/components/my/navbar";
 import { SearchBar } from "@/components/my/search-bar";
-import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { data } from "@/lib/dataExample";
-import { ClipboardType, Mails } from "lucide-react";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { ClipboardEdit, ClipboardType, Mails, Trash2 } from "lucide-react";
+import { Chart as ChartJS, ArcElement, Tooltip } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { DialogClose } from "@radix-ui/react-dialog";
 
 const form = data.home[0]
 ChartJS.register(ArcElement, Tooltip, );
@@ -33,9 +35,34 @@ export default function Home() {
                 {form._count.Answer}
               </div>
             </div>
+            <section className="flex items-center py-4 gap-4">
+              <Dialog>
+                <DialogTrigger >
+                  <Button className="gap-2" variant="destructive">
+                    <Trash2 size={20}/> Excluir
+                  </Button>
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>Você tem certeza absoluta?</DialogTitle>
+                    <DialogDescription>
+                      Essa ação não pode ser desfeita. Isso irá excluir permanentemente seu formulário e remover seus dados de nossos servidores.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="flex gap-2 justify-center mt-2">
+                    <DialogClose asChild>
+                      <Button variant="outline">Cancelar</Button>
+                    </DialogClose>
+                    <Button href='/home' variant="delete">Excluir</Button>
+                  </div>
+                </DialogContent>
+              </Dialog>
+              <Button href="/form" className="gap-2" variant="outline">
+                <ClipboardEdit size={20}/> Editar
+              </Button>
+            </section>
           </aside>
           <Separator orientation="vertical"/>
-          
         </div>
         <Separator/>
         <div className="flex gap-3 flex-col flex-1">

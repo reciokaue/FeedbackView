@@ -100,9 +100,9 @@ export function QuestionCard({ data, index, editing = false }: CardData){
             allow comments: booleans
           </LabelDiv> */}
           <div className="flex justify-end gap-2 mt-3">
-            <Button variant="secondary">Cancel</Button>
+            <Button variant="secondary">Cancelar</Button>
             <Button className="bg-primary gap-2">
-              Save question <Check size={20}/>
+              Salvar questão <Check size={20}/>
             </Button>
           </div>
         </form>
