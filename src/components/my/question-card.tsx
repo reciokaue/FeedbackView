@@ -48,7 +48,7 @@ export function QuestionCard({ data, index, editing = false }: CardData){
         </label>
       </header>
       <div className="flex flex-1 gap-4">
-        <span className="rounded-full flex justify-center items-center shrink-0 h-7 w-7 bg-primary text-white">{index+1}</span>            
+        <span className="rounded-full flex justify-center items-center shrink-0 h-7 w-7 bg-primary text-primary-foreground">{index+1}</span>            
         <p className="text-lg font-medium w-full text-neutral-700 leading-relaxed">{data.text}</p>
       </div>
 
@@ -108,7 +108,7 @@ export function QuestionCard({ data, index, editing = false }: CardData){
         </form>
       }
       
-      <Button className="absolute h-full -left-12 top-0 transition-colors" variant="link">
+      <Button className="absolute h-full cursor-pointer -left-12 top-0 transition-colors" variant="link">
         <GripVertical/>
       </Button>
       <div className="flex flex-col items-center justify-center  absolute group-hover:-right-12 group-hover:opacity-100 opacity-0 h-full right-0 top-0 transition-all">

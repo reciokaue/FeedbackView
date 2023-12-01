@@ -6,10 +6,11 @@ import { Eye, EyeOff } from "lucide-react"
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   styles?: string
+  Icon?: React.ReactNode
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, styles, ...props }, ref) => {
+  ({ className, type, styles, Icon, ...props }, ref) => {
     const [isVisible, setIsVisible] = React.useState(false)
 
     const toggleVisibility = (e: any) => {

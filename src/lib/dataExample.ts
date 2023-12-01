@@ -188,7 +188,6 @@ export const data = {
   'questionTypes': [
     { label: "Múltipla Escolha", value: "multiple_choice" },
     { label: "Verdadeiro/Falso", value: "true_false" },
-    { label: "Preenchimento de Espaços em Branco", value: "fill_in_the_blank" },
     { label: "Resposta Curta", value: "short_answer" },
     { label: "Resposta Longa", value: "long_answer" },
     { label: "Escolha de Imagem", value: "image_choice" },

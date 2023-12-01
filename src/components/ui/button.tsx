@@ -15,6 +15,7 @@ const buttonVariants = cva(
         delete: "bg-destructive text-destructive-foreground  hover:bg-destructive/90",
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground font-normal text-primary/50 hover:text-primary/70",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        sidebar: "bg-secondary flex justify-start gap-2 w-full text-secondary-foreground/70 hover:text-secondary-foreground",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary font-normal text-primary/50 hover:text-stone-700",
         gold: "text-primary-foreground bg-amber-500 hover:bg-amber-500/90",
