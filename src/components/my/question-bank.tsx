@@ -1,3 +1,5 @@
+'use client'
+
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { DialogClose } from "@radix-ui/react-dialog";
 import { Button } from "../ui/button";
@@ -14,7 +16,7 @@ import { cn } from "@/lib/utils";
 export function QuestionBank(){
   return (
     <Dialog>
-      <DialogTrigger >
+      <DialogTrigger  asChild>
         <Button  variant="outline" className="gap-2 w-full">
           Banco de questões
         </Button>
@@ -33,7 +35,7 @@ export function QuestionBank(){
           </div>
         </header>
         <section className="grid grid-cols-2 gap-3 overflow-scroll max-h-[370px]">
-          {data.questionsList.map((question, index) => (
+          {data?.questionsList.map((question, index) => (
             <QuestionCard key={question.id} data={question}/>
           ))}
         </section>

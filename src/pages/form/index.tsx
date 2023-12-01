@@ -19,10 +19,12 @@ export default function Form() {
           <header className="flex flex-col items-start justify-center">
             <h1 className="font-medium text-2xl leading-relaxed mt-3 mb-1">Question list</h1>
             <p className="max-w-xl text-base text-start text-muted-foreground">Este formulário visa entender e aprimorar a experiência geral do usuário, abrangendo aspectos cruciais do relacionamento entre os clientes e os serviços oferecidos.</p>
-            <Button className="self-center text-primary gap-2 font-semibold mt-2 mb-10" variant="link">
-              <Eye/>
-              Visualizar questões
-            </Button>
+            <div className="flex justify-center w-full">
+              <Button href="/form/answer/0" className="text-primary gap-2 font-semibold mt-2 mb-10" variant="link">
+                <Eye/>
+                Visualizar questões
+              </Button>
+            </div>
           </header>
           <Collapsible 
             open={isOpen}
