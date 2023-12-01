@@ -12,7 +12,7 @@ export default function Form() {
   const [isOpen, setIsOpen] = useState(true)
 
   return (
-    <div className='flex flex-col justify-center relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10'>
+    <div className='flex flex-col justify-start relative max-w-7xl max-h-screen overflow-hidden mx-auto px-4 md:px-6 lg:px-8 xl:px-10'>
       <Navbar/>
       <div className="flex justify-center">
         <section className="flex items-center overflow-y-scroll overflow-x-visible max-h-screen flex-1 flex-col relative max-w-2xl pb-10">
