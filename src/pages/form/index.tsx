@@ -41,11 +41,6 @@ export default function Form() {
               </CollapsibleContent>
             </div>
           </Collapsible>
-          <div className="flex justify-end py-6 w-full px-12">
-            <Button href="/form/form1" className="gap-3">
-              Salvar <CheckCheck size={16}/>
-            </Button>
-          </div> 
         </section>
         <FormTabs/>
       </div>

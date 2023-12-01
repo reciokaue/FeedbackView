@@ -2,15 +2,15 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "./button"
-import { Eye, EyeOff } from "lucide-react"
+import { Eye, EyeOff, Search } from "lucide-react"
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   styles?: string
-  Icon?: React.ReactNode
+  search?: boolean
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, styles, Icon, ...props }, ref) => {
+  ({ className, type, styles, search = false, ...props }, ref) => {
     const [isVisible, setIsVisible] = React.useState(false)
 
     const toggleVisibility = (e: any) => {
@@ -40,6 +40,9 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         >
           {isVisible? <Eye/>: <EyeOff/>}
         </Button>
+      }
+      {search &&
+        <Search className="w-4 h-full absolute top-0 right-3 text-muted-foreground"/>
       }
     </div>)
   }

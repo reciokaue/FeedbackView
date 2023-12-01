@@ -1,6 +1,5 @@
-import { CheckCheck, ChevronLeft, HelpCircle, History, Search, Wrench } from "lucide-react";
+import { CheckCheck, HelpCircle } from "lucide-react";
 import { Button } from "../ui/button";
-import { Input } from "../ui/input";
 import { DatePickerDemo } from "../ui/datepicker";
 import { LabelDiv } from "./label-div";
 import { data } from '../../lib/dataExample'
@@ -8,8 +7,8 @@ import { Combobox } from "../ui/combobox";
 import { NewQuestion } from "./new-question";
 import { Switch } from "../ui/switch";
 import { useState } from "react";
-import { Toggle } from "../ui/toggle";
 import ImageUpload from "./image-upload";
+import { QuestionBank } from "./question-bank";
 
 export function FormTabs(){
   const [checked, setChecked] = useState(true)
@@ -19,10 +18,7 @@ export function FormTabs(){
       <LabelDiv title="Logotipo">
        <ImageUpload/>
       </LabelDiv>
-      <Button  variant="outline" className="gap-2">
-        <HelpCircle size={20}/>
-        Banco de questões
-      </Button>
+      <QuestionBank/>
       <NewQuestion/>
       <LabelDiv title="Ativo">
         <Switch

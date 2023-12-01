@@ -22,13 +22,14 @@ interface ComboboxProps {
   frameworks: Array<Option>
   title: string
   defaultValue?: string
+  styles?: string
 }
 interface Option {
   label: string
   value: string
 }
 
-export function Combobox({frameworks, title, defaultValue = ""}: ComboboxProps) {
+export function Combobox({frameworks, title, styles, defaultValue = ""}: ComboboxProps) {
   const [open, setOpen] = React.useState(false)
   const [value, setValue] = React.useState(defaultValue)
 
@@ -39,7 +40,7 @@ export function Combobox({frameworks, title, defaultValue = ""}: ComboboxProps) 
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-full justify-between"
+          className={"w-full justify-between " + styles}
         >
           {value
             ? frameworks.find((framework) => framework.value === value)?.label
