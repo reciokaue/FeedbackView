@@ -184,6 +184,28 @@ export const data = {
         answer: 0,
       },
     },
+    {
+      id: "q7",
+      topic: "Experiência do Usuário (UX)",
+      questionType: "Multiple Choice",
+      text: "Como você classificaria nosso atendimento ao cliente?",
+      formId: "form1",
+      options: [
+        { id: "opt27", text: "Frequentemente", value: 1, questionId: "q6" },
+        { id: "opt28", text: "Ocasionalmente", value: 2, questionId: "q6" },
+        { id: "opt29", text: "Raramente", value: 3, questionId: "q6" },
+        { id: "opt30", text: "Nunca", value: 4, questionId: "q6" },
+      ],
+      _count: {
+        options: [
+          5,
+          12,
+          22,
+          6,
+        ],
+        answer: 0,
+      },
+    },
   ],
   'questionTypes': [
     { label: "Múltipla Escolha", value: "multiple_choice" },
