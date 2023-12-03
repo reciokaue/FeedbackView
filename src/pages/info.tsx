@@ -11,19 +11,19 @@ export default function info(){
          <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
             <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nosso Time</h2>
-                {/* <p className="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore toda a coleção de componentes e elementos web de código aberto, construídos com as classes utilitárias do Tailwind</p> */}
             </div>
             <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
                 <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar"/>
+                        <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://api.dicebear.com/7.x/thumbs/svg?seed=Ginger" alt="Bonnie Avatar"/>
                     </a>
                     <div className="p-5">
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                             <a href="#">Bonnie Green</a>
                         </h3>
-                        <span className="text-gray-500 dark:text-gray-400">CEO & Web Developer</span>
-                        <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Bonnie drives the technical strategy of the flowbite platform and brand.</p>
+                        <span className="text-gray-500 dark:text-gray-400">CEO e Desenvolvedor Web</span>
+<p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Bonnie conduz a estratégia técnica da plataforma e marca feedbackview.</p>
+
                         <ul className="flex space-x-4 sm:mt-0">
                             <li>
                                 <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -50,7 +50,7 @@ export default function info(){
                 </div> 
                 <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar"/>
+                        <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://api.dicebear.com/7.x/thumbs/svg?seed=Bear" alt="Jese Avatar"/>
                     </a>
                     <div className="p-5">
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -84,7 +84,7 @@ export default function info(){
                 </div> 
                 <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar"/>
+                        <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://api.dicebear.com/7.x/thumbs/svg?seed=Harley" alt="Michael Avatar"/>
                     </a>
                     <div className="p-5">
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -118,7 +118,7 @@ export default function info(){
                 </div> 
                 <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png" alt="Sofia Avatar"/>
+                        <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://api.dicebear.com/7.x/thumbs/svg?seed=Nala" alt="Sofia Avatar"/>
                     </a>
                     <div className="p-5">
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -159,7 +159,7 @@ export default function info(){
               <dl className="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
                   <div className="flex flex-col items-center justify-center">
                       <dt className="mb-2 text-3xl md:text-4xl font-extrabold">4+</dt>
-                      <dd className="font-light text-gray-500 dark:text-gray-400">developers</dd>
+                      <dd className="font-light text-gray-500 dark:text-gray-400">desenvolvedores</dd>
                   </div>
                   <div className="flex flex-col items-center justify-center">
                       <dt className="mb-2 text-3xl md:text-4xl font-extrabold">1B+</dt>
@@ -180,10 +180,10 @@ export default function info(){
                       <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
                   </svg> 
                   <blockquote>
-                      <p className="text-2xl font-medium text-gray-900 dark:text-white">"FeedbackView é incrível. Contém uma tonelada de perguntas e formulários prontos, desde a um questionário simples até o os mais complexos. Escolha perfeita para sua próxima pesquisa."</p>
+                      <p className="text-2xl font-medium text-gray-900 dark:text-white">FeedbackView é incrível. Contém uma tonelada de perguntas e formulários prontos, desde a um questionário simples até o os mais complexos. Escolha perfeita para sua próxima pesquisa.</p>
                   </blockquote>
                   <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                      <img className="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="foto de perfil"/>
+                      <img className="w-6 h-6 rounded-full" src="https://api.dicebear.com/7.x/thumbs/svg?seed=Bailey" alt="foto de perfil"/>
                       <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                           <div className="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
                           <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO na Google</div>
@@ -275,7 +275,7 @@ export default function info(){
                   </svg>
                   FeebackView    
               </a>
-              <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023-2023 <a href="#" className="hover:underline">FeedbackView™</a>. All Rights Reserved.</span>
+              <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023-2023 <a href="#" className="hover:underline">FeedbackView™</a>. Todos os direitos reservados.</span>
           </div>
         </footer>
     </div>
