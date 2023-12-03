@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { DialogClose } from "@radix-ui/react-dialog";
+import { QrCodeButton } from "@/components/my/qr-download";
 
 const form = data.home[0]
 ChartJS.register(ArcElement, Tooltip, );
@@ -60,6 +61,7 @@ export default function Home() {
               <Button href="/form" className="gap-2" variant="outline">
                 <ClipboardEdit size={20}/> Editar
               </Button>
+              <QrCodeButton/>
             </section>
           </aside>
           <Separator orientation="vertical"/>
