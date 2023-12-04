@@ -38,7 +38,7 @@ O custo elevado para se contratar agências de publicidade e marketing
 ### Plano Gratuito:
 - **Preço:** R$000,00
 - **Recursos incluídos:**
-  - Limite de questionários: 3
+  - Limite de questionários: 1
   - Limite de respostas por mês: 100
   - Exportação de dados (PDF)
   - Anúncios nos questionários
@@ -46,8 +46,8 @@ O custo elevado para se contratar agências de publicidade e marketing
 ### Plano Básico:
 - **Preço Mensal:** R$100,00
 - **Recursos incluídos:**
-  - Limite de questionários: 10
-  - Limite de respostas por mês: 1500
+  - Limite de questionários: 3
+  - Limite de respostas por mês: 1000
   - Preço por resposta extra: R$0,85
   - Suporte ao cliente por email
   - Sem anúncios nos questionários
@@ -55,11 +55,11 @@ O custo elevado para se contratar agências de publicidade e marketing
 ### Plano Premium:
 - **Preço Mensal:** R$200,00
 - **Recursos incluídos (além dos recursos do Plano Básico):**
-  - Limite de questionários: Ilimitado
+  - Limite de questionários: 10
   - Limite de respostas por mês: 5,000
   - Preço por resposta extra: R$0,50
   - Suporte ao cliente 24 horas por dia por email
-  - Personalização de logotipo, cores e URL do questionário
+  - Personalização de logotipo
   - Análise automática das respostas
 
 ## Requisitos da primeira versão (MVP):
@@ -68,12 +68,12 @@ O custo elevado para se contratar agências de publicidade e marketing
 - O gerente deve conseguir ativar e desativar formulários. 
 - O gerente deve conseguir criar as questões do seu formulário. 
 - O gerente deve selecionar uma data limite para formulários. 
-- O usuário deve conseguir responder as formulários. 
+- O usuário deve conseguir responder os formulários. 
 - O administrador deve conseguir visualizar os gerentes e seus formulários. 
 - O administrador deve conseguir criar e editar questões.
 - O administrador deve conseguir criar e editar tópicos.
 - O sistema deve salvar formulários inativos. 
-- O sistema deve apresentar os resultados das formulários. 
+- O sistema deve apresentar os resultados dos formulários. 
 - O sistema deve gerar um qrCode e um link de acesso à formulário. 
 
 ## Observações:
@@ -89,7 +89,7 @@ O custo elevado para se contratar agências de publicidade e marketing
 
 #### gerente:
   Permite criar e finalizar formulários
-  Permite visualizar dados das formulários
+  Permite visualizar dados dos formulários
   Permite personalizar perguntas do formulário
 
 #### Administrador.
