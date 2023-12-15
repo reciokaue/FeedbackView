@@ -111,6 +111,11 @@ O custo elevado para se contratar agências de publicidade e marketing
 
 ![Diagrama ER](./docs/conceitual.drawio.png)
 
+## Modelo de entidade e relacionamento ER
+
+![Diagrama de Classes](./docs/class.diagram.drawio.png)
+
+
 ## Modelo ERD
 
 ![Diagrama ERD](./docs/ERD.svg)
